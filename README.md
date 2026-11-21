@@ -16,23 +16,6 @@ wins the round.
 
 ---
 
-## Table of contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [How to play](#how-to-play)
-- [Tech stack](#tech-stack)
-- [Project structure](#project-structure)
-- [Architecture](#architecture)
-- [Data schema and protocol](#data-schema-and-protocol)
-- [Getting started](#getting-started)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Security and privacy](#security-and-privacy)
-- [Known limitations](#known-limitations)
-- [Roadmap](#roadmap)
-- [Releases](#releases)
-
 ## Overview
 
 Bomb Tag Arena is a server-authoritative WebSocket game with no accounts, no
