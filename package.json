@@ -1,0 +1,23 @@
+{
+  "name": "bomb-tag-arena",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "format": "prettier --write public src test scripts README.md package.json render.yaml",
+    "test:browser": "node scripts/verify-browser.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "prettier": "^3.10.1"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "ws": "^8.23.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
