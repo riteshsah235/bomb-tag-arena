@@ -14,7 +14,6 @@ wins the round.
 
 **Play now:** [bomb-tag-arena.onrender.com](https://bomb-tag-arena.onrender.com/)
 
----
 
 ## Overview
 
