@@ -810,3 +810,13 @@ header { background: #0d1019cc; backdrop-filter: blur(8px); position: sticky; to
 
 .hright{display:flex;align-items:center;gap:6px}
 @media(max-width:760px){#mute{padding:6px 8px;font-size:12px;margin-right:0}}
+
+/* Keep every live-game header control visible on narrow phones. */
+@media (max-width: 350px) {
+  header { padding-inline: 12px; gap: 6px; }
+  #brand { font-size: 20px; flex-shrink: 0; }
+  .roompill { gap: 6px; }
+  .roompill b { font-size: 12px; letter-spacing: 1px; }
+  .roompill button { padding: 8px 6px; white-space: nowrap; }
+  #network { min-width: 40px; }
+}
