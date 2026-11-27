@@ -1,15 +1,6 @@
-# Bomb Tag Arena
-
-**Pass the bomb. Dodge your friends. Be the last one standing.**
-
-A real-time multiplayer party game for 2-8 players that runs entirely in the
-browser. One player holds a ticking bomb; touching another player passes it to
-them. When the fuse runs out, the holder explodes. The last player standing
-wins the round.
-
 <div align="center">
 
-# 💣 Bomb Tag Arena
+# Bomb Tag Arena
 
 **Pass the bomb. Dodge your friends. Be the last one standing.**
 
