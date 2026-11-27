@@ -7,13 +7,47 @@ browser. One player holds a ticking bomb; touching another player passes it to
 them. When the fuse runs out, the holder explodes. The last player standing
 wins the round.
 
+<div align="center">
+
+# 💣 Bomb Tag Arena
+
+**Pass the bomb. Dodge your friends. Be the last one standing.**
+
+A real-time multiplayer party game for 2-8 players that runs entirely in the browser.
+
 ![Release](https://img.shields.io/badge/release-v1.1.0-83f9cf)
 ![Node.js](https://img.shields.io/badge/node-%3E%3D22-339933)
 ![Stack](https://img.shields.io/badge/stack-Express%205%20%2B%20ws-11141e)
 ![License](https://img.shields.io/badge/license-all%20rights%20reserved-lightgrey)
 
-**Play now:** [bomb-tag-arena.onrender.com](https://bomb-tag-arena.onrender.com/)
+**[▶ Play now](https://bomb-tag-arena.onrender.com/)** · [How to play](#how-to-play) · [Run locally](#getting-started) · [Protocol](#data-schema-and-protocol)
 
+<img src="docs/home-desktop.png" alt="Bomb Tag Arena home screen" width="760">
+
+</div>
+
+One player holds a ticking bomb; touching another player passes it on. When the
+fuse runs out, the holder explodes. The last player standing wins the round.
+The free Render instance sleeps when idle, so the first visit can take about a
+minute to wake it.
+
+## Contents
+
+- [Overview](#overview)
+- [Screenshots](#screenshots)
+- [Features](#features)
+- [How to play](#how-to-play)
+- [Tech stack](#tech-stack)
+- [Project structure](#project-structure)
+- [Architecture](#architecture)
+- [Data schema and protocol](#data-schema-and-protocol)
+- [Getting started](#getting-started)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Security and privacy](#security-and-privacy)
+- [Known limitations](#known-limitations)
+- [Roadmap](#roadmap)
+- [Releases](#releases)
 
 ## Overview
 
@@ -23,6 +57,15 @@ six-character code or invite link, and friends join from any modern browser,
 on phones or computers. All game rules (movement, tagging, bomb timers,
 eliminations and scoring) are owned by the server, so every player sees the
 same authoritative match.
+
+## Screenshots
+
+| Desktop match | Phone controls |
+| :---: | :---: |
+| <img src="docs/gameplay-desktop.png" alt="Two players in a live round on desktop" width="520"> | <img src="docs/gameplay-mobile.png" alt="Phone view with joystick and dash button" width="190"> |
+
+Captured from a local two-player match: one desktop browser and one phone-sized
+touch session.
 
 ## Features
 
@@ -129,6 +172,7 @@ bomb-tag-arena/
 │   └── arena.test.js          # Unit tests for the game rules
 ├── scripts/
 │   └── verify-browser.mjs     # Two-browser end-to-end check (Playwright)
+├── docs/                      # README screenshots
 ├── render.yaml                # Render Blueprint (free plan configuration)
 ├── package.json               # Scripts and dependencies
 ├── package-lock.json          # Locked dependency tree
@@ -175,6 +219,9 @@ Browser                    Server (one process owns all rooms)
 All room state lives in server memory. There is no database; the schema below
 describes the in-memory structures and the wire protocol between client and
 server.
+
+<details>
+<summary><strong>Show wire protocol and schemas</strong></summary>
 
 ### Connection
 
@@ -277,6 +324,8 @@ malformed is dropped.
 Only two `localStorage` keys are used: `bombtag-name` (nickname convenience)
 and `bombtag-mute` (sound preference). Both are cleared by clearing site
 data.
+
+</details>
 
 ## Getting started
 
@@ -386,4 +435,9 @@ Notes:
 
 ---
 
-Built by [riteshsah235](https://github.com/riteshsah235). All rights reserved.
+<div align="center">
+
+&copy; 2026 Bomb Tag Arena. All rights reserved.<br>
+Designed &amp; Developed by <a href="https://github.com/riteshsah235">Ritesh</a>
+
+</div>
