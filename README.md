@@ -10,7 +10,7 @@ wins the round.
 ![Release](https://img.shields.io/badge/release-v1.1.0-83f9cf)
 ![Node.js](https://img.shields.io/badge/node-%3E%3D22-339933)
 ![Stack](https://img.shields.io/badge/stack-Express%205%20%2B%20ws-11141e)
-![License](https://img.shields.io/badge/license-private-lightgrey)
+![License](https://img.shields.io/badge/license-all%20rights%20reserved-lightgrey)
 
 **Play now:** [bomb-tag-arena.onrender.com](https://bomb-tag-arena.onrender.com/)
 
@@ -386,5 +386,4 @@ Notes:
 
 ---
 
-Built by [riteshsah235](https://github.com/riteshsah235). Private repository;
-all rights reserved.
+Built by [riteshsah235](https://github.com/riteshsah235). All rights reserved.
