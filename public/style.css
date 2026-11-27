@@ -820,3 +820,27 @@ header { background: #0d1019cc; backdrop-filter: blur(8px); position: sticky; to
   .roompill button { padding: 8px 6px; white-space: nowrap; }
   #network { min-width: 40px; }
 }
+
+/* ===== site footer ===== */
+.site-footer {
+  position: relative;
+  margin-top: 34px;
+  padding-top: 16px;
+  border-top: 1px solid #ffffff14;
+}
+.site-footer .footnote {
+  margin: 0 0 10px;
+}
+.footer-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 24px;
+  color: #8b94a7;
+  letter-spacing: 0.4px;
+}
+@media (max-width: 640px) {
+  .footer-line {
+    flex-direction: column;
+  }
+}
